@@ -1,0 +1,25 @@
+void main() {
+  
+  helper("vivaan","",0);
+   
+}
+ helper(string,temp,index){
+   
+   //basecase 
+   
+   if(string.length==index){
+     print( temp);
+     return ;
+   }
+
+   
+   //take 
+   
+   helper(string,temp+string[index],index+1);
+   //non-take 
+   
+   helper(string,temp,index+1);
+
+    return ;
+    
+  }
